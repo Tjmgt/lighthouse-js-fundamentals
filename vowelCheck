@@ -1,0 +1,17 @@
+const numberOfVowels = function (data) {
+  let numV = 0;
+  for (let i = 0; i < data.length; i++) {
+    if (
+      data[i] === "a" ||
+      data[i] === "e" ||
+      data[i] === "i" ||
+      data[i] === "o" ||
+      data[i] === "u"
+    ) {
+      numV += 1;
+    }
+  }
+  return numV;
+};
+
+console.log(numberOfVowels("orange"));
